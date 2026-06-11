@@ -47,7 +47,7 @@ async function processBuffer(buffer: Buffer): Promise<ProcessedImage> {
   }
 
   const format = metadata.format ?? "unknown";
-  const mimeType = `image/${format === "jpg" ? "jpeg" : format}`;
+  const mimeType = `image/${format}`;
 
   return {
     data: buffer,

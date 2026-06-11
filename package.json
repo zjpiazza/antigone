@@ -59,6 +59,7 @@
     "@j178/prek": "^0.4.4",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
+    "@types/node": "^25.9.3",
     "oxlint": "^1.69.0",
     "semantic-release": "^25.0.5",
     "tsup": "^8.5.1",
