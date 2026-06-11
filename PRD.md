@@ -314,11 +314,11 @@ Configuration is resolved in this order:
 
 ### MVP
 
-- [ ] Core `describe` and `compare` tools
-- [ ] Gemini provider (free tier)
-- [ ] CLI interface
-- [ ] MCP server adapter
-- [ ] README and documentation
+- [x] Core `describe` and `compare` tools
+- [x] Gemini provider (free tier)
+- [x] CLI interface
+- [x] MCP server adapter
+- [x] README and documentation
 
 ### Multi-Provider
 
@@ -326,20 +326,20 @@ Configuration is resolved in this order:
 - [ ] Anthropic provider
 - [ ] OpenAI provider
 - [ ] Provider auto-detection from environment
-- [ ] Config file support
+- [x] Config file support
 
 ### Enhanced Tools
 
 - [ ] `ocr` tool
 - [ ] `check-ui` tool with platform guidelines
-- [ ] Structured JSON output for all tools
-- [ ] Image preprocessing pipeline (resize, normalize)
+- [x] Structured JSON output for all tools
+- [x] Image preprocessing pipeline (resize, normalize)
 
 ### Skill & Distribution
 
 - [ ] Agent skill definition (`SKILL.md`)
 - [ ] npm publish
-- [ ] CI/CD pipeline
+- [x] CI/CD pipeline
 - [ ] Integration tests with real providers
 
 ### Stable Release
