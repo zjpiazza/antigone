@@ -22,7 +22,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "serve": "node dist/mcp/index.js",
-    "prepare": "prek install || true"
+    "prepare": "prek install || true",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "vision",
