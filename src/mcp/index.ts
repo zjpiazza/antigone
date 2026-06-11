@@ -1,3 +1,5 @@
+declare const __VERSION__: string;
+
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { z } from "zod/v4";
@@ -8,7 +10,7 @@ import { checkUi } from "../core/tools/check-ui.js";
 
 const server = new McpServer({
   name: "antigone",
-  version: "0.0.1",
+  version: __VERSION__,
 });
 
 server.registerTool(

@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+declare const __VERSION__: string;
+
 import { program } from "commander";
 import { describe } from "../core/tools/describe.js";
 import { compare } from "../core/tools/compare.js";
@@ -8,7 +10,7 @@ import { checkUi } from "../core/tools/check-ui.js";
 program
   .name("antigone")
   .description("Vision bridge for text-only AI models")
-  .version("0.0.1");
+  .version(__VERSION__);
 
 program
   .command("describe")

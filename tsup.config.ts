@@ -1,4 +1,7 @@
 import { defineConfig } from "tsup";
+import { readFileSync } from "node:fs";
+
+const { version } = JSON.parse(readFileSync("./package.json", "utf-8"));
 
 export default defineConfig({
   entry: {
@@ -12,4 +15,7 @@ export default defineConfig({
   splitting: true,
   sourcemap: true,
   target: "node18",
+  define: {
+    __VERSION__: JSON.stringify(version),
+  },
 });
