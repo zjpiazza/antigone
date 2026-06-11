@@ -8,7 +8,7 @@ on:
 
 jobs:
   check:
-    name: Lint, Typecheck & Test
+    name: CI
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
