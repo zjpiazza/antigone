@@ -322,10 +322,10 @@ Configuration is resolved in this order:
 
 ### Multi-Provider
 
-- [ ] OpenRouter provider
-- [ ] Anthropic provider
-- [ ] OpenAI provider
-- [ ] Provider auto-detection from environment
+- [x] OpenRouter provider
+- [x] Anthropic provider
+- [x] OpenAI provider
+- [x] Provider auto-detection from environment
 - [x] Config file support
 
 ### Enhanced Tools
