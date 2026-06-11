@@ -20,7 +20,7 @@ const PROVIDER_DEFAULTS: Record<string, { model: string; envKeys: string[] }> = 
     envKeys: ["GEMINI_API_KEY", "GOOGLE_API_KEY"],
   },
   openrouter: {
-    model: "google/gemini-2.0-flash-exp:free",
+    model: "google/gemini-2.5-flash",
     envKeys: ["OPENROUTER_API_KEY"],
   },
   anthropic: {
@@ -32,6 +32,15 @@ const PROVIDER_DEFAULTS: Record<string, { model: string; envKeys: string[] }> = 
     envKeys: ["OPENAI_API_KEY"],
   },
 };
+
+const DETECTION_ORDER = ["gemini", "openai", "anthropic", "openrouter"];
+
+function detectProvider(configFile: ConfigFile | null): string {
+  for (const name of DETECTION_ORDER) {
+    if (resolveApiKey(name, configFile)) return name;
+  }
+  return "gemini";
+}
 
 async function loadConfigFile(): Promise<ConfigFile | null> {
   const configPath = join(homedir(), ".config", "antigone", "config.json");
@@ -68,7 +77,7 @@ export async function resolveConfig(overrides?: {
   const configFile = await loadConfigFile();
 
   const provider =
-    overrides?.provider ?? configFile?.provider ?? "gemini";
+    overrides?.provider ?? configFile?.provider ?? detectProvider(configFile);
   const defaults = PROVIDER_DEFAULTS[provider];
   if (!defaults) {
     throw new Error(`Unknown provider: ${provider}`);

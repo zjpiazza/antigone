@@ -163,7 +163,7 @@ _For more examples, please refer to the [Documentation](https://github.com/zjpia
 - [x] `ocr` tool
 - [x] `check-ui` tool with platform guidelines
 - [x] Agent skill definition
-- [ ] Multi-provider support (OpenRouter, Anthropic, OpenAI)
+- [x] Multi-provider support (OpenRouter, Anthropic, OpenAI)
 - [ ] Provider fallback chains
 - [ ] Caching layer
 
