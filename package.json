@@ -1,0 +1,55 @@
+{
+  "name": "antigone",
+  "version": "0.0.1",
+  "description": "Vision bridge for text-only AI models. Like Antigone guiding blind Oedipus — gives sight to models that can't see.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "antigone": "./dist/cli/index.js"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "oxlint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "serve": "node dist/mcp/index.js"
+  },
+  "keywords": [
+    "vision",
+    "ai",
+    "mcp",
+    "image-analysis",
+    "text-only",
+    "multimodal",
+    "gemini",
+    "llm",
+    "model-context-protocol",
+    "cli"
+  ],
+  "author": "zjpiazza",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zjpiazza/antigone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zjpiazza/antigone/issues"
+  },
+  "homepage": "https://github.com/zjpiazza/antigone#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "skill"
+  ]
+}
