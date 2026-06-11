@@ -1,10 +1,12 @@
 import { describe as viDescribe, it, expect } from "vitest";
-import { describe, compare, loadImage, resolveConfig, createProvider } from "./index.js";
+import { describe, compare, ocr, checkUi, loadImage, resolveConfig, createProvider } from "./index.js";
 
 viDescribe("library exports", () => {
   it("exports core functions", () => {
     expect(typeof describe).toBe("function");
     expect(typeof compare).toBe("function");
+    expect(typeof ocr).toBe("function");
+    expect(typeof checkUi).toBe("function");
     expect(typeof loadImage).toBe("function");
     expect(typeof resolveConfig).toBe("function");
     expect(typeof createProvider).toBe("function");
