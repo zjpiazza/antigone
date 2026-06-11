@@ -160,8 +160,8 @@ _For more examples, please refer to the [Documentation](https://github.com/zjpia
 - [x] Core `describe` and `compare` tools with Gemini provider
 - [x] CLI interface
 - [x] MCP server adapter
-- [ ] `ocr` tool
-- [ ] `check-ui` tool with platform guidelines
+- [x] `ocr` tool
+- [x] `check-ui` tool with platform guidelines
 - [ ] Agent skill definition
 - [ ] Multi-provider support (OpenRouter, Anthropic, OpenAI)
 - [ ] Provider fallback chains

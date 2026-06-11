@@ -1,6 +1,8 @@
 export {
   describe,
   compare,
+  ocr,
+  checkUi,
   loadImage,
   resolveConfig,
   createProvider,
@@ -9,6 +11,12 @@ export {
 export type {
   DescribeResult,
   CompareResult,
+  OcrResult,
+  OcrBlock,
+  OcrOptions,
+  CheckUiResult,
+  CheckUiIssue,
+  CheckUiOptions,
   DescribeOptions,
   CompareOptions,
   Difference,

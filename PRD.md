@@ -330,8 +330,8 @@ Configuration is resolved in this order:
 
 ### Enhanced Tools
 
-- [ ] `ocr` tool
-- [ ] `check-ui` tool with platform guidelines
+- [x] `ocr` tool
+- [x] `check-ui` tool with platform guidelines
 - [x] Structured JSON output for all tools
 - [x] Image preprocessing pipeline (resize, normalize)
 

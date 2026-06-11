@@ -54,3 +54,32 @@ export interface CompareResult {
   differences: Difference[];
   match_score: number;
 }
+
+export interface OcrOptions extends ToolOptions {}
+
+export interface OcrBlock {
+  text: string;
+  confidence: number;
+}
+
+export interface OcrResult {
+  text: string;
+  blocks: OcrBlock[];
+}
+
+export interface CheckUiOptions extends ToolOptions {
+  requirements?: string;
+  platform?: "ios" | "android";
+}
+
+export interface CheckUiIssue {
+  description: string;
+  severity: "minor" | "major" | "critical";
+  guideline: string;
+}
+
+export interface CheckUiResult {
+  score: number;
+  issues: CheckUiIssue[];
+  passes: string[];
+}
