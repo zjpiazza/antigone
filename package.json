@@ -21,7 +21,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "serve": "node dist/mcp/index.js"
+    "serve": "node dist/mcp/index.js",
+    "prepare": "prek install || true"
   },
   "keywords": [
     "vision",
@@ -51,5 +52,23 @@
   "files": [
     "dist",
     "skill"
-  ]
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
+    "@j178/prek": "^0.4.4",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "oxlint": "^1.69.0",
+    "semantic-release": "^25.0.5",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.8"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "commander": "^15.0.0",
+    "sharp": "^0.35.0",
+    "zod": "^4.4.3"
+  }
 }
