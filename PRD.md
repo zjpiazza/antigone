@@ -337,7 +337,7 @@ Configuration is resolved in this order:
 
 ### Skill & Distribution
 
-- [ ] Agent skill definition (`SKILL.md`)
+- [x] Agent skill definition (`SKILL.md`)
 - [ ] npm publish
 - [x] CI/CD pipeline
 - [ ] Integration tests with real providers
