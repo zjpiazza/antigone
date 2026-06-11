@@ -1,12 +1,12 @@
 {
   "name": "antigone",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Vision bridge for text-only AI models. Like Antigone guiding blind Oedipus — gives sight to models that can't see.",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "antigone": "./dist/cli/index.js"
+    "antigone": "dist/cli/index.js"
   },
   "exports": {
     ".": {
