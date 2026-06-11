@@ -43,7 +43,7 @@ Verification order: `lint` -> `typecheck` -> `test`
 - **CI** (`.github/workflows/ci.yml`): runs lint, typecheck, test on push/PR to `main`
 - **Release** (`.github/workflows/release.yml`): semantic-release on push to `main`
 - **semantic-release** (`.releaserc.json`): auto-versions from conventional commits, generates CHANGELOG.md, publishes to npm, creates GitHub releases
-- Requires `NPM_TOKEN` secret for npm publish; `GITHUB_TOKEN` is automatic
+- Uses [npm trusted publishing](https://docs.npmjs.com/trusted-publishers) (OIDC) — no `NPM_TOKEN` secret needed; `GITHUB_TOKEN` is automatic
 
 ## Architecture
 
